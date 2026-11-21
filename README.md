@@ -179,4 +179,4 @@ eval/            50 labelled tickets + 15 hold-out tickets, evaluation script an
 
 ---
 
-*Built by Ridwan Triafandi, AI Automation Engineer · [LinkedIn](https://www.linkedin.com/in/ridwan-triafandi-639a453b5/)*
+*Built by Ridwan Triafandi, AI Automation Engineer · [LinkedIn](https://www.linkedin.com/in/ridwan-triafandi-639a453b5/) · Companion project: [Speed-to-Lead Agent](https://github.com/ridwantriafandi355-bit/speed-to-lead-agent)*
