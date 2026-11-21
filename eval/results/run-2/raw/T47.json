@@ -1,0 +1,39 @@
+{
+  "ticket_id": "T47",
+  "action": "ignore",
+  "priority": "normal",
+  "next_step": "Archive without replying",
+  "dry_run": true,
+  "reasons": [
+    "Spam or unsolicited message"
+  ],
+  "triage": {
+    "intent": "spam",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "negative",
+    "risk_flags": [],
+    "summary": "Phishing email claiming account suspension and requesting verification.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": null,
+  "metrics": {
+    "latency_ms": 848,
+    "tokens": {
+      "triage": {
+        "prompt": 930,
+        "completion": 59
+      },
+      "draft": null
+    },
+    "est_cost_usd": 8.7e-05
+  },
+  "errors": [],
+  "_wall_ms": 934
+}

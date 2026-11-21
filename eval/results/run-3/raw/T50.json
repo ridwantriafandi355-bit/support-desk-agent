@@ -1,0 +1,59 @@
+{
+  "ticket_id": "T50",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "No order found for this email, so the reply asks for the order number"
+  ],
+  "triage": {
+    "intent": "refund_status",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "negative",
+    "risk_flags": [],
+    "summary": "Customer hasn't received refund after returning item.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer reports a missing refund but no order was found for this email. Ask for order number and email used for the order to locate the return.",
+    "kb_gap": false,
+    "reply": "Hi Michael,\n\nWe’re sorry you haven’t received your refund yet. To investigate, could you please provide the order number and the email address used when you placed the order? Once we have that information, we’ll look into the status of your return and refund.\n\nThank you,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "T50",
+    "from_name": "Michael Ross",
+    "from_email": "michael.ross@example.com",
+    "reply_to": "michael.ross@example.com",
+    "subject": "Refund still missing"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 2428,
+    "tokens": {
+      "triage": {
+        "prompt": 905,
+        "completion": 105
+      },
+      "draft": {
+        "prompt": 2127,
+        "completion": 154
+      }
+    },
+    "est_cost_usd": 0.000511
+  },
+  "errors": [],
+  "_wall_ms": 2517
+}

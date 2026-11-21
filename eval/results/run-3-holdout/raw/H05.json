@@ -1,0 +1,70 @@
+{
+  "ticket_id": "H05",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Refund already issued; reply with the date and bank timing"
+  ],
+  "triage": {
+    "intent": "refund_status",
+    "order_number": "DS-1026",
+    "language": "en",
+    "sentiment": "negative",
+    "risk_flags": [],
+    "summary": "Customer asks if refund received for cancelled order DS-1026.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1026",
+    "order_number": "DS-1026"
+  },
+  "facts": {
+    "status": "cancelled",
+    "days_since_delivery": null,
+    "return_window_open": false,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": true,
+    "is_international": false,
+    "return_shipping": "US return: we email a prepaid return label and deduct $6.95 from the refund"
+  },
+  "draft": {
+    "internal_note": "Auto-reply: Customer asks refund status for cancelled order DS-1026. Refund was issued on 2026-11-02; inform customer of bank processing time.",
+    "kb_gap": false,
+    "reply": "Hi Samuel,\n\nWe processed a refund for order DS-1026 on 2026-11-02 for the full amount of $24.95. Your bank typically posts refunds within 5‑10 business days, so you should see it soon.\n\nIf you don’t see the credit after that time, please let us know.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "H05",
+    "from_name": "Samuel Ross",
+    "from_email": "samuel.ross@example.com",
+    "reply_to": "samuel.ross@example.com",
+    "subject": "Refund for cancelled order"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 2146,
+    "tokens": {
+      "triage": {
+        "prompt": 916,
+        "completion": 128
+      },
+      "draft": {
+        "prompt": 2611,
+        "completion": 199
+      }
+    },
+    "est_cost_usd": 0.000618
+  },
+  "errors": [],
+  "_wall_ms": 2246
+}

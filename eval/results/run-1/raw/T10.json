@@ -1,0 +1,46 @@
+{
+  "ticket_id": "T10",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Order DS-1025 belongs to a different email address, so no order details are shared"
+  ],
+  "triage": {
+    "intent": "order_status",
+    "order_number": "DS-1025",
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Customer requests tracking number and delivery address for order DS-1025.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "email_mismatch",
+    "requested": "DS-1025",
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "The customer is requesting tracking and address for order DS-1025, but the order is linked to a different email address. Per policy, we cannot share any order details when there is an email mismatch. We should ask the customer to contact us from the email address used for the order or provide the order confirmation email.",
+    "kb_gap": false,
+    "reply": "Hi Eve,\n\nThanks for reaching out. For privacy and security, we can only share order details with the email address used when the order was placed. Could you please contact us from that email address or forward the order confirmation? Once we verify the email, we’ll be happy to provide the tracking number and delivery address.\n\nBest regards,\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 12552,
+    "tokens": {
+      "triage": {
+        "prompt": 879,
+        "completion": 115
+      },
+      "draft": {
+        "prompt": 2026,
+        "completion": 224
+      }
+    },
+    "est_cost_usd": 0.000539
+  },
+  "errors": [],
+  "_wall_ms": 12615
+}

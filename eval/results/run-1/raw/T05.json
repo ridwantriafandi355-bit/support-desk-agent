@@ -1,0 +1,55 @@
+{
+  "ticket_id": "T05",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "In transit and on schedule; reply with tracking"
+  ],
+  "triage": {
+    "intent": "order_status",
+    "order_number": "DS-1021",
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "negative",
+    "summary": "Customer asks where order DS-1021 is and is dissatisfied.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1021",
+    "order_number": "DS-1021"
+  },
+  "facts": {
+    "status": "shipped",
+    "days_since_delivery": null,
+    "return_window_open": false,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false
+  },
+  "draft": {
+    "internal_note": "Customer inquires about order DS-1021 status. Order is shipped via UPS US Standard, tracking number 1Z999AA10000001021, last event departed Memphis TN on 2026-11-17, estimated delivery 2026-11-21. Provide tracking link and reassurance.",
+    "kb_gap": false,
+    "reply": "Hi Abigail,\n\nYour Ember Two-Burner Camp Stove (order DS-1021) shipped on November 16 via UPS US Standard. The tracking number is 1Z999AA10000001021; you can view its progress here: https://www.ups.com/track?loc=en_US&tracknum=1Z999AA10000001021. The latest update shows it departed the Memphis, TN facility on November 17, and the estimated delivery date is November 21.\n\nWe appreciate your patience and are here if you have any further questions.\n\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 2171,
+    "tokens": {
+      "triage": {
+        "prompt": 899,
+        "completion": 90
+      },
+      "draft": {
+        "prompt": 2451,
+        "completion": 239
+      }
+    },
+    "est_cost_usd": 0.000605
+  },
+  "errors": [],
+  "_wall_ms": 2250
+}

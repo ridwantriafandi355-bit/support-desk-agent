@@ -1,0 +1,55 @@
+{
+  "ticket_id": "T15",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Eligible return (inside the window, no final-sale items); reply with return instructions"
+  ],
+  "triage": {
+    "intent": "return_request",
+    "order_number": "DS-1028",
+    "language": "fr",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer wants to return an unused wool blanket from order DS-1028.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1028",
+    "order_number": "DS-1028"
+  },
+  "facts": {
+    "status": "delivered",
+    "days_since_delivery": 6,
+    "return_window_open": true,
+    "damage_window_open": true,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false
+  },
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Bonjour Camille,\n\nMerci pour votre message. Vous pouvez initier le retour de votre couverture en laine en vous rendant sur https://returns.driftwood-supply.example et en saisissant le numéro de commande DS-1028 ainsi que votre adresse e‑mail. Nous vous enverrons ensuite une étiquette de retour prépayée par e‑mail. Une fois que nous aurons reçu l’article en bon état, nous procéderons au remboursement sur le mode de paiement d’origine (le délai bancaire peut prendre 5 à 10 jours ouvrés).\n\nN’hésitez pas si vous avez d’autres questions.\n\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 17659,
+    "tokens": {
+      "triage": {
+        "prompt": 890,
+        "completion": 114
+      },
+      "draft": {
+        "prompt": 2458,
+        "completion": 200
+      }
+    },
+    "est_cost_usd": 0.00059
+  },
+  "errors": [],
+  "_wall_ms": 17724
+}

@@ -1,0 +1,47 @@
+{
+  "ticket_id": "T37",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Shipping question answered from the store policy"
+  ],
+  "triage": {
+    "intent": "shipping_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Customer asks about express shipping availability and delivery time for a kettle to Ohio.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Hi Alex,\n\nWe do offer US Express shipping (UPS 2nd Day Air) for $19.00. Orders placed before 12:00 ET on a business day ship the same day, and delivery takes 1‑2 business days. If you place your order today before 12:00 ET, it should arrive by Saturday.\n\nLet us know if you’d like to proceed!\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 12200,
+    "tokens": {
+      "triage": {
+        "prompt": 920,
+        "completion": 82
+      },
+      "draft": {
+        "prompt": 2141,
+        "completion": 285
+      }
+    },
+    "est_cost_usd": 0.000586
+  },
+  "errors": [],
+  "_wall_ms": 12263
+}

@@ -1,0 +1,59 @@
+{
+  "ticket_id": "H11",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Shipping question answered from the store policy"
+  ],
+  "triage": {
+    "intent": "shipping_question",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer asks if shipping to Japan is available.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer asks about shipping to Japan. Store policy states we do not ship to other countries yet. Provide a clear answer that we cannot ship to Japan.",
+    "kb_gap": false,
+    "reply": "Hi Kenji,\n\nThanks for reaching out! At this time we only ship within the United States, Canada, the United Kingdom, the European Union, and Australia. Unfortunately, we do not ship to Japan.\n\nIf you have any other questions or need assistance with a different order, feel free to let us know.\n\nBest regards,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "H11",
+    "from_name": "Kenji Sato",
+    "from_email": "kenji.sato@example.org",
+    "reply_to": "kenji.sato@example.org",
+    "subject": "Shipping to Japan"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 14812,
+    "tokens": {
+      "triage": {
+        "prompt": 905,
+        "completion": 99
+      },
+      "draft": {
+        "prompt": 2120,
+        "completion": 178
+      }
+    },
+    "est_cost_usd": 0.000522
+  },
+  "errors": [],
+  "_wall_ms": 14899
+}

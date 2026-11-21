@@ -1,0 +1,46 @@
+{
+  "ticket_id": "T36",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Shipping question answered from the store policy"
+  ],
+  "triage": {
+    "intent": "shipping_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks about import duties or VAT for a kettle shipped to London.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Hi Sophie,\n\nYes, orders shipped to the United Kingdom are sent DDU, which means any import duties or VAT are not included in our price. The carrier will collect those fees from you upon delivery.\n\nIf you have any other questions, feel free to let us know.\n\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 1473,
+    "tokens": {
+      "triage": {
+        "prompt": 868,
+        "completion": 110
+      },
+      "draft": {
+        "prompt": 1998,
+        "completion": 153
+      }
+    },
+    "est_cost_usd": 0.00049
+  },
+  "errors": [],
+  "_wall_ms": 1535
+}

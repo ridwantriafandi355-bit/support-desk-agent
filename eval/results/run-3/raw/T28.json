@@ -1,0 +1,47 @@
+{
+  "ticket_id": "T28",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Product question answered from the catalog"
+  ],
+  "triage": {
+    "intent": "product_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks if the Ridgeline kettle works on an induction cooktop.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer asks if Ridgeline Pour-Over Kettle works on induction. Catalog states it is NOT compatible with induction cooktops. Provide that answer.",
+    "kb_gap": false,
+    "reply": "Hi Noah,\n\nThanks for reaching out! The Ridgeline Pour-Over Kettle is not compatible with induction cooktops. It works on gas burners, electric coil stoves, and camp stoves.\n\nLet us know if you have any other questions.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 11941,
+    "tokens": {
+      "triage": {
+        "prompt": 906,
+        "completion": 110
+      },
+      "draft": {
+        "prompt": 2126,
+        "completion": 163
+      }
+    },
+    "est_cost_usd": 0.000518
+  },
+  "errors": [],
+  "_wall_ms": 12009
+}

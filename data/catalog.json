@@ -1,0 +1,96 @@
+[
+  {
+    "sku": "RK-09",
+    "name": "Ridgeline Pour-Over Kettle",
+    "price_usd": 49,
+    "facts": [
+      "0.9 L capacity, brushed stainless steel",
+      "Gooseneck spout for controlled pour-over",
+      "Built-in lid thermometer (Fahrenheit and Celsius)",
+      "Works on gas burners, electric coil stoves and camp stoves",
+      "NOT compatible with induction cooktops",
+      "Hand wash only"
+    ]
+  },
+  {
+    "sku": "BG-30",
+    "name": "Basecamp Hand Grinder",
+    "price_usd": 65,
+    "facts": [
+      "Ceramic conical burrs",
+      "Holds up to 30 g of whole beans",
+      "18 click settings, from espresso-fine to French-press-coarse",
+      "Fits inside an AeroPress for packing",
+      "Clean the burrs with the included brush; do not wash the burrs with water",
+      "1-year limited warranty"
+    ]
+  },
+  {
+    "sku": "ES-2",
+    "name": "Ember Two-Burner Camp Stove",
+    "price_usd": 139,
+    "facts": [
+      "Two burners, 10,000 BTU each",
+      "Runs on propane only (standard 1 lb / 16.4 oz cylinders). Not for butane canisters",
+      "Can connect to a 20 lb propane tank with a standard adapter hose (not included)",
+      "Push-button piezo ignition, wind guards included",
+      "Outdoor use only",
+      "1-year limited warranty"
+    ]
+  },
+  {
+    "sku": "TM-12",
+    "name": "Trailhead Insulated Mug 12 oz",
+    "price_usd": 28,
+    "facts": [
+      "Double-wall vacuum insulated stainless steel",
+      "Keeps drinks hot for up to 6 hours and cold for up to 12 hours",
+      "Splash-proof slider lid (not fully leakproof)",
+      "Mug body is dishwasher safe; wash the lid on the top rack"
+    ]
+  },
+  {
+    "sku": "SM-4",
+    "name": "Summit Enamel Mug Set (4 x 10 oz)",
+    "price_usd": 36,
+    "facts": [
+      "Four 10 oz enamel-coated steel mugs",
+      "Not microwave safe",
+      "Hand wash recommended",
+      "When bought at the clearance price ($24) the set is marked Final sale"
+    ]
+  },
+  {
+    "sku": "FL-300",
+    "name": "Firefly Rechargeable Lantern",
+    "price_usd": 42,
+    "facts": [
+      "Up to 300 lumens",
+      "Rechargeable via USB-C; a full charge takes about 3 hours",
+      "Runs up to 20 hours on low and about 5 hours on high",
+      "IPX4 splash resistant (not waterproof)",
+      "USB-A output to charge a phone in an emergency",
+      "1-year limited warranty"
+    ]
+  },
+  {
+    "sku": "WB-1",
+    "name": "Driftwood Wool Camp Blanket",
+    "price_usd": 89,
+    "facts": [
+      "80% recycled wool, 20% polyester",
+      "60 x 80 inches",
+      "Weighs about 3.5 lb"
+    ]
+  },
+  {
+    "sku": "CR-12",
+    "name": "Campfire Roast Whole Bean Coffee 12 oz",
+    "price_usd": 18,
+    "facts": [
+      "Medium-dark roast with notes of chocolate and toasted nuts",
+      "Roasted every week; ships whole bean only",
+      "Returns accepted only if the bag is unopened"
+    ]
+  }
+]

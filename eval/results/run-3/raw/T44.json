@@ -1,0 +1,59 @@
+{
+  "ticket_id": "T44",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Send the AI draft to a reviewer (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Partnership, job or other request: route to a human"
+  ],
+  "triage": {
+    "intent": "other",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Influencer offering collaboration for free gear in exchange for a review reel.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "The inquiry is a partnership/collaboration request, which according to Store Policies must be handled by the partnerships team. Draft a polite response acknowledging the request and stating we will forward it to the appropriate team. No order details are involved.",
+    "kb_gap": false,
+    "reply": "Hi Maya,\n\nThank you for reaching out and for your interest in collaborating with Driftwood Supply Co. We appreciate your offer to review our gear. I’ll forward your request to our partnerships team, and they’ll be in touch if there’s a fit.\n\nBest regards,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "T44",
+    "from_name": "Maya Trails",
+    "from_email": "maya.trails@example.com",
+    "reply_to": "maya.trails@example.com",
+    "subject": "Collab?"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 7043,
+    "tokens": {
+      "triage": {
+        "prompt": 919,
+        "completion": 79
+      },
+      "draft": {
+        "prompt": 2144,
+        "completion": 223
+      }
+    },
+    "est_cost_usd": 0.000548
+  },
+  "errors": [],
+  "_wall_ms": 7117
+}

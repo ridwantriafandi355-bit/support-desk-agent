@@ -1,0 +1,46 @@
+{
+  "ticket_id": "T06",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Customer has several orders and named none, so the reply covers them or asks which one"
+  ],
+  "triage": {
+    "intent": "order_status",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer asks where their order is.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "multiple_orders",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer has multiple orders (DS-1022 delivered on 2026-10-16, DS-1023 shipped with estimated delivery 2026-11-22). Provide status for both orders in reply.",
+    "kb_gap": false,
+    "reply": "Hi Dan,\n\nThanks for reaching out. Here’s the latest on your orders:\n\n- Order DS-1022 (Campfire Roast Whole Bean Coffee) was delivered on Oct 16, 2026.\n- Order DS-1023 (Ridgeline Pour‑Over Kettle and Basecamp Hand Grinder) shipped via USPS on Nov 15, 2026. The tracking number is 9400100000000000001023 and the estimated delivery date is Nov 22, 2026.\n\nIf you need more details or have another order in mind, just let us know.\n\nBest regards,\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 12623,
+    "tokens": {
+      "triage": {
+        "prompt": 859,
+        "completion": 99
+      },
+      "draft": {
+        "prompt": 2204,
+        "completion": 250
+      }
+    },
+    "est_cost_usd": 0.000575
+  },
+  "errors": [],
+  "_wall_ms": 12735
+}

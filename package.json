@@ -1,0 +1,12 @@
+{
+  "name": "support-desk-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI support ticket triage for e-commerce: n8n + Groq LLMs + deterministic business rules + human approval, with an evaluation harness.",
+  "scripts": {
+    "build": "node scripts/build-workflows.js",
+    "test": "node --test tests/policy-engine.test.js",
+    "eval": "python eval/run_eval.py"
+  },
+  "license": "MIT"
+}

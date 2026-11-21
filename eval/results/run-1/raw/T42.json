@@ -1,0 +1,46 @@
+{
+  "ticket_id": "T42",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Complaint: a human should own the response"
+  ],
+  "triage": {
+    "intent": "complaint",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "negative",
+    "risk_flags": [],
+    "summary": "Customer complains about lack of response and poor service.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer Mark Ellis reports no response to previous emails and expresses dissatisfaction. No order is linked to this inquiry. According to Store Policies, support replies within 1 business day. Draft a courteous apology, reassure that the support team is active, and ask for any order number or details so we can investigate further. No policy gaps; kb_gap = false.",
+    "kb_gap": false,
+    "reply": "Hi Mark,\n\nI’m sorry you haven’t heard back from us – that’s not the experience we aim to provide. Our support team is active and typically replies within one business day. To help us look into your case quickly, could you please share any order number or details about your purchase?\n\nWe appreciate your patience and will get this resolved as soon as possible.\n\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 2173,
+    "tokens": {
+      "triage": {
+        "prompt": 870,
+        "completion": 97
+      },
+      "draft": {
+        "prompt": 1998,
+        "completion": 288
+      }
+    },
+    "est_cost_usd": 0.000567
+  },
+  "errors": [],
+  "_wall_ms": 2243
+}

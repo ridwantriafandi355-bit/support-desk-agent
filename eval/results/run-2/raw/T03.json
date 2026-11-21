@@ -1,0 +1,58 @@
+{
+  "ticket_id": "T03",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "In transit 15 days past the estimate; possible lost parcel needs a reship/refund decision"
+  ],
+  "triage": {
+    "intent": "order_status",
+    "order_number": "DS-1006",
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "negative",
+    "summary": "Customer asks about delayed order DS-1006.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1006",
+    "order_number": "DS-1006"
+  },
+  "facts": {
+    "status": "shipped",
+    "days_since_delivery": null,
+    "return_window_open": false,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 15,
+    "overdue": true,
+    "refund_issued": false,
+    "is_international": false,
+    "return_shipping": "US return: we email a prepaid return label and deduct $6.95 from the refund"
+  },
+  "draft": {
+    "internal_note": "Order DS-1006 shipped via USPS is 15 days past the estimated delivery date and tracking hasn't updated since 2026-11-02. Per policy, we must open an investigation with the carrier. Inform the customer we are doing so and that we will either reship the blanket or issue a refund once the carrier confirms the parcel is lost. No further action needed from the customer at this time.",
+    "kb_gap": false,
+    "reply": "Hi James,\n\nI’m sorry you haven’t received your Driftwood Wool Camp Blanket yet. Your order (DS-1006) was shipped on 2026-10-28 via USPS and was estimated to arrive on 2026-11-03. Since the tracking hasn’t changed since 2026-11-02, we’re opening an investigation with the carrier.\n\nWe’ll let you know as soon as we have an update. If the parcel is confirmed lost, we’ll either resend the blanket or issue a full refund, whichever you prefer.\n\nThank you for your patience.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 18031,
+    "tokens": {
+      "triage": {
+        "prompt": 937,
+        "completion": 122
+      },
+      "draft": {
+        "prompt": 2652,
+        "completion": 322
+      }
+    },
+    "est_cost_usd": 0.000698
+  },
+  "errors": [],
+  "_wall_ms": 18097
+}

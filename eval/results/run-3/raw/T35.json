@@ -1,0 +1,47 @@
+{
+  "ticket_id": "T35",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Shipping question answered from the store policy"
+  ],
+  "triage": {
+    "intent": "shipping_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks about minimum order for free shipping in the US.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer asks about minimum order for free shipping in the US. Store policy states free shipping on orders of $75 or more. Provide that info.",
+    "kb_gap": false,
+    "reply": "Hi Kevin,\n\nFree standard shipping in the US is automatically applied to orders of $75 or more. Orders below that amount incur a $6.95 shipping fee.\n\nLet us know if you have any other questions!\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 1849,
+    "tokens": {
+      "triage": {
+        "prompt": 898,
+        "completion": 104
+      },
+      "draft": {
+        "prompt": 2116,
+        "completion": 146
+      }
+    },
+    "est_cost_usd": 0.000504
+  },
+  "errors": [],
+  "_wall_ms": 1921
+}

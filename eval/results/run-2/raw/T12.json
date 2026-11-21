@@ -1,0 +1,58 @@
+{
+  "ticket_id": "T12",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Eligible return (inside the window, no final-sale items); reply with return instructions"
+  ],
+  "triage": {
+    "intent": "return_request",
+    "order_number": "DS-1017",
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Customer wants to return unused Basecamp grinder from order DS-1017.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1017",
+    "order_number": "DS-1017"
+  },
+  "facts": {
+    "status": "delivered",
+    "days_since_delivery": 7,
+    "return_window_open": true,
+    "damage_window_open": true,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": false,
+    "return_shipping": "US return: we email a prepaid return label and deduct $6.95 from the refund"
+  },
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Hi Harper,\n\nThanks for reaching out. Since your order DS-1017 was delivered on 2026-11-11 and the return window is still open, you can return the unused Basecamp Hand Grinder. We'll email you a prepaid US return label. Please note that $6.95 will be deducted from your refund to cover the original shipping cost.\n\nOnce you receive the label, attach it to the package and drop it off at your local USPS location. After we receive and inspect the item, we’ll process the refund to your original payment method within 3 business days.\n\nIf you have any other questions, just let us know.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 2067,
+    "tokens": {
+      "triage": {
+        "prompt": 923,
+        "completion": 141
+      },
+      "draft": {
+        "prompt": 2648,
+        "completion": 203
+      }
+    },
+    "est_cost_usd": 0.000631
+  },
+  "errors": [],
+  "_wall_ms": 2123
+}

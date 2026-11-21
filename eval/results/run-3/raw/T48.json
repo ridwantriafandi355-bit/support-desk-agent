@@ -1,0 +1,51 @@
+{
+  "ticket_id": "T48",
+  "action": "ignore",
+  "priority": "normal",
+  "next_step": "Archive without replying",
+  "dry_run": true,
+  "reasons": [
+    "Spam or unsolicited message"
+  ],
+  "triage": {
+    "intent": "spam",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Promotional email offering crypto trading bot with 3% daily earnings.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": null,
+  "ticket": {
+    "id": "T48",
+    "from_name": "CryptoYield",
+    "from_email": "promo@cryptoyield.example",
+    "reply_to": "promo@cryptoyield.example",
+    "subject": "Earn 3% daily"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 1078,
+    "tokens": {
+      "triage": {
+        "prompt": 910,
+        "completion": 62
+      },
+      "draft": null
+    },
+    "est_cost_usd": 0.000087
+  },
+  "errors": [],
+  "_wall_ms": 1146
+}

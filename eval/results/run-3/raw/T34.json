@@ -1,0 +1,59 @@
+{
+  "ticket_id": "T34",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Shipping question answered from the store policy"
+  ],
+  "triage": {
+    "intent": "shipping_question",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer asks if we ship to Canada, shipping time and cost.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer asks about shipping to Canada. Store policy provides shipping options and times for Canada: 5-10 business days, $14.95 cost. No order details needed. Auto-reply can be sent.",
+    "kb_gap": false,
+    "reply": "Hi Olivia,\n\nYes, we ship to Canada. Delivery typically takes 5‑10 business days and the shipping cost is $14.95.\n\nIf you have any other questions, feel free to let us know.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "T34",
+    "from_name": "Olivia Tremblay",
+    "from_email": "olivia.tremblay@example.org",
+    "reply_to": "olivia.tremblay@example.org",
+    "subject": "Shipping to Canada"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 1811,
+    "tokens": {
+      "triage": {
+        "prompt": 913,
+        "completion": 107
+      },
+      "draft": {
+        "prompt": 2132,
+        "completion": 153
+      }
+    },
+    "est_cost_usd": 0.000512
+  },
+  "errors": [],
+  "_wall_ms": 1880
+}

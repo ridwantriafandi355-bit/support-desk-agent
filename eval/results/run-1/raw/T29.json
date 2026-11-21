@@ -1,0 +1,46 @@
+{
+  "ticket_id": "T29",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Product question answered from the catalog"
+  ],
+  "triage": {
+    "intent": "product_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks about grinder capacity and espresso grind capability.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Hi Priya,\n\nThe Basecamp Hand Grinder holds up to 30 g of whole beans and features 18 click settings, including an espresso‑fine grind. Let us know if you have any other questions!\n\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 3831,
+    "tokens": {
+      "triage": {
+        "prompt": 868,
+        "completion": 102
+      },
+      "draft": {
+        "prompt": 1993,
+        "completion": 140
+      }
+    },
+    "est_cost_usd": 0.000479
+  },
+  "errors": [],
+  "_wall_ms": 3922
+}

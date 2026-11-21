@@ -1,0 +1,46 @@
+{
+  "ticket_id": "T39",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Money-related request (billing, discount or price adjustment)"
+  ],
+  "triage": {
+    "intent": "billing_or_discount",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer reports discount code not working at checkout.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer reports discount code WELCOME10 not working at checkout and wants to place an order for the lantern. No order exists in the system. According to Store Policies, discount codes must be applied at checkout and cannot be added after purchase. Advise the customer to ensure the code is entered correctly, that only one code per order is allowed, and to try again. Offer to assist further if the issue persists, asking for a screenshot of the error. No billing action can be taken now.",
+    "kb_gap": false,
+    "reply": "Hi Nina,\n\nSorry you’re having trouble with the WELCOME10 code. Our discount codes must be entered at checkout and only one code can be used per order. Please double‑check that the code is typed exactly as shown and that no other code is applied. If it still won’t apply, try placing a new order for the Firefly Rechargeable Lantern and enter the code before completing payment. Should the problem continue, send us a screenshot of the error and we’ll look into it.\n\nThanks for reaching out!\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 2054,
+    "tokens": {
+      "triage": {
+        "prompt": 870,
+        "completion": 101
+      },
+      "draft": {
+        "prompt": 2000,
+        "completion": 348
+      }
+    },
+    "est_cost_usd": 0.000604
+  },
+  "errors": [],
+  "_wall_ms": 2129
+}

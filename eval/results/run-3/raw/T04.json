@@ -1,0 +1,58 @@
+{
+  "ticket_id": "T04",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Carrier says delivered but the customer is asking; possible missing parcel"
+  ],
+  "triage": {
+    "intent": "order_status",
+    "order_number": "1016",
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "negative",
+    "summary": "Customer reports package marked delivered but not received and asks for next steps.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1016",
+    "order_number": "DS-1016"
+  },
+  "facts": {
+    "status": "delivered",
+    "days_since_delivery": 4,
+    "return_window_open": true,
+    "damage_window_open": true,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": false,
+    "return_shipping": "US return: we email a prepaid return label and deduct $6.95 from the refund"
+  },
+  "draft": {
+    "internal_note": "Customer reports parcel marked delivered but not received. According to store policy, advise checking around property and with neighbors, wait 24 hours, then we will file a claim with USPS. Provide tracking link. No refund or replacement promised yet.",
+    "kb_gap": false,
+    "reply": "Hi Benjamin,\n\nI’m sorry you haven’t received your order. The carrier shows it was delivered on 2026-11-14. Please check around your property and with any neighbors, and wait 24 hours in case the package was marked delivered early. If it still hasn’t turned up, let us know and we’ll file a claim with USPS on your behalf.\n\nYou can view the tracking details here: https://driftwood-supply.example/track/DS-1016\n\nThank you for your patience.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 17548,
+    "tokens": {
+      "triage": {
+        "prompt": 926,
+        "completion": 124
+      },
+      "draft": {
+        "prompt": 2764,
+        "completion": 247
+      }
+    },
+    "est_cost_usd": 0.000669
+  },
+  "errors": [],
+  "_wall_ms": 17650
+}

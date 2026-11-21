@@ -1,0 +1,47 @@
+{
+  "ticket_id": "T09",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Order DS-1099 not found, so the reply asks the customer to double-check the number"
+  ],
+  "triage": {
+    "intent": "order_status",
+    "order_number": "DS-1099",
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Customer requests tracking link for order DS-1099.",
+    "confidence": 1
+  },
+  "order_match": {
+    "status": "not_found",
+    "requested": "DS-1099",
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "The system could not find order DS-1099. Respond by asking the customer to verify the order number or provide the email address used for the order.",
+    "kb_gap": false,
+    "reply": "Hi Ryan,\n\nWe couldn’t locate an order with the number DS-1099 in our system. Could you please double‑check the order number or let us know the email address you used when placing the order? Once we have the correct details, we’ll be happy to send you the tracking information.\n\nThanks,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 1790,
+    "tokens": {
+      "triage": {
+        "prompt": 908,
+        "completion": 114
+      },
+      "draft": {
+        "prompt": 2141,
+        "completion": 163
+      }
+    },
+    "est_cost_usd": 0.000521
+  },
+  "errors": [],
+  "_wall_ms": 1843
+}

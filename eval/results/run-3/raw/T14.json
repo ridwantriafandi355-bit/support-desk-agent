@@ -1,0 +1,58 @@
+{
+  "ticket_id": "T14",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Outside the 30-day return window (47 days since delivery)"
+  ],
+  "triage": {
+    "intent": "return_request",
+    "order_number": "DS-1004",
+    "language": "de",
+    "sentiment": "negative",
+    "risk_flags": [],
+    "summary": "Noah wants to return the lantern from order DS-1004.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1004",
+    "order_number": "DS-1004"
+  },
+  "facts": {
+    "status": "delivered",
+    "days_since_delivery": 47,
+    "return_window_open": false,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": true,
+    "return_shipping": "International return: the customer ships the item back at their own cost to the address shown in the returns portal (no prepaid label)"
+  },
+  "draft": {
+    "internal_note": "The customer wants to return the Firefly Rechargeable Lantern (order DS-1004). The return window is closed (47 days since delivery), but returns are still allowed; the customer must cover international return shipping and use the returns portal. No prepaid label is provided. Provide the return instructions and link, and note that the refund will be processed after we receive the item. No policy gaps.",
+    "kb_gap": false,
+    "reply": "Hallo Noah,\n\nvielen Dank für Ihre Nachricht. Die Rücksendung Ihres Firefly Rechargeable Lantern (Bestellung DS‑1004) ist möglich, jedoch liegt die Rückgabefrist von 30 Tagen bereits seit 47 Tagen hinter Ihnen. Da es sich um eine internationale Rücksendung handelt, übernehmen wir die Rücksende­kosten nicht. Bitte nutzen Sie das Rücksende‑Portal unter https://returns.driftwood-supply.example, geben Sie dort Ihre Bestellnummer und Ihre E‑Mail‑Adresse ein und folgen Sie den Anweisungen. Sie senden das Gerät an die dort angegebene Adresse.\n\nSobald wir die Rücksendung erhalten und geprüft haben, erstatten wir Ihnen den Kaufpreis (abzüglich der Versandkosten von 6,95 USD, wie in den Rückgaberichtlinien angegeben) auf die ursprüngliche Zahlungsart. Die Gutschrift erscheint dann innerhalb von 3 Geschäftstagen auf Ihrem Konto.\n\nBei weiteren Fragen stehen wir Ihnen gerne zur Verfügung.\n\nViele Grüße,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 2469,
+    "tokens": {
+      "triage": {
+        "prompt": 924,
+        "completion": 120
+      },
+      "draft": {
+        "prompt": 2689,
+        "completion": 376
+      }
+    },
+    "est_cost_usd": 0.000734
+  },
+  "errors": [],
+  "_wall_ms": 2542
+}

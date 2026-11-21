@@ -1,0 +1,47 @@
+{
+  "ticket_id": "T06",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Customer has several orders and named none, so the reply covers them or asks which one"
+  ],
+  "triage": {
+    "intent": "order_status",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer asks where their order is.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "multiple_orders",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer has multiple orders and did not specify which. Provide status and tracking for both orders and ask which they need more detail on.",
+    "kb_gap": false,
+    "reply": "Hi Dan,\n\nWe see you have two recent orders:\n\n1. Order DS-1022 – delivered on 2026-10-16. Tracking: https://driftwood-supply.example/track/DS-1022\n2. Order DS-1023 – shipped on 2026-11-17, estimated delivery 2026-11-22. Tracking: https://driftwood-supply.example/track/DS-1023\n\nPlease let us know which order you’d like more information about.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 17616,
+    "tokens": {
+      "triage": {
+        "prompt": 902,
+        "completion": 99
+      },
+      "draft": {
+        "prompt": 2445,
+        "completion": 225
+      }
+    },
+    "est_cost_usd": 0.000599
+  },
+  "errors": [],
+  "_wall_ms": 17721
+}

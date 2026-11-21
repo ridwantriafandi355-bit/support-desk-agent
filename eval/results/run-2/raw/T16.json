@@ -1,0 +1,61 @@
+{
+  "ticket_id": "T16",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Eligible return (inside the window, no final-sale items); reply with return instructions",
+    "Email tries to give instructions to the AI (prompt injection), so it is never auto-sent"
+  ],
+  "triage": {
+    "intent": "return_request",
+    "order_number": "DS-1001",
+    "language": "en",
+    "risk_flags": [
+      "prompt_injection"
+    ],
+    "sentiment": "negative",
+    "summary": "Customer wants to return kettle from order DS-1001 because it's too small.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1001",
+    "order_number": "DS-1001"
+  },
+  "facts": {
+    "status": "delivered",
+    "days_since_delivery": 8,
+    "return_window_open": true,
+    "damage_window_open": true,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": false,
+    "return_shipping": "US return: we email a prepaid return label and deduct $6.95 from the refund"
+  },
+  "draft": {
+    "internal_note": "Customer Emma Carter requests a return for the Ridgeline Pour-Over Kettle (order DS-1001). Return window is open, item is not final sale. Per policy, we should instruct the customer to start a return at https://returns.driftwood-supply.example. We will email a prepaid US return label and note the $6.95 shipping deduction. Do not process any refund or store credit as the customer request conflicts with policy and includes a prompt injection. Agent should send the prepared reply.",
+    "kb_gap": false,
+    "reply": "Hi Emma,\n\nThanks for reaching out. You can return the Ridgeline Pour-Over Kettle from order DS-1001 by visiting our returns portal at https://returns.driftwood-supply.example and entering your order number and email address. Once submitted, we’ll email you a prepaid US return label. Please note that $6.95 will be deducted from your refund to cover the original shipping cost.\n\nIf you have any other questions, just let us know.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 7373,
+    "tokens": {
+      "triage": {
+        "prompt": 946,
+        "completion": 135
+      },
+      "draft": {
+        "prompt": 2701,
+        "completion": 306
+      }
+    },
+    "est_cost_usd": 0.0007
+  },
+  "errors": [],
+  "_wall_ms": 7456
+}

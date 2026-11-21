@@ -1,0 +1,46 @@
+{
+  "ticket_id": "T34",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Shipping question answered from the store policy"
+  ],
+  "triage": {
+    "intent": "shipping_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks about shipping availability, cost, and delivery time to Canada.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Hi Olivia,\n\nYes, we ship to Canada. Shipping costs $14.95 and delivery typically takes 5–10 business days after your order ships. If you have any other questions, feel free to let us know!\n\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 2318,
+    "tokens": {
+      "triage": {
+        "prompt": 870,
+        "completion": 110
+      },
+      "draft": {
+        "prompt": 2000,
+        "completion": 130
+      }
+    },
+    "est_cost_usd": 0.000476
+  },
+  "errors": [],
+  "_wall_ms": 2397
+}

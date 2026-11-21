@@ -1,0 +1,55 @@
+{
+  "ticket_id": "T08",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "In transit and on schedule; reply with tracking"
+  ],
+  "triage": {
+    "intent": "order_status",
+    "order_number": "DS-1003",
+    "language": "es",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer asks for location of order DS-1003 in Madrid.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1003",
+    "order_number": "DS-1003"
+  },
+  "facts": {
+    "status": "shipped",
+    "days_since_delivery": null,
+    "return_window_open": false,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false
+  },
+  "draft": {
+    "internal_note": "Order DS-1003 is shipped via DHL, last event: arrived in destination country, Madrid hub (customs processing) on 2026-11-15. Provide tracking number and estimated delivery date.",
+    "kb_gap": false,
+    "reply": "Hola Sofía,\n\nTu pedido DS-1003 fue enviado el 5 de noviembre y está en tránsito con DHL. El último registro muestra que llegó al hub de Madrid el 15 de noviembre y está en proceso de aduana. Puedes seguir el envío con el número de seguimiento 1003100310 en el sitio web de DHL. La fecha estimada de entrega es el 24 de noviembre.\n\nSi tienes alguna otra pregunta, estamos aquí para ayudar.\n\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 2068,
+    "tokens": {
+      "triage": {
+        "prompt": 881,
+        "completion": 119
+      },
+      "draft": {
+        "prompt": 2493,
+        "completion": 199
+      }
+    },
+    "est_cost_usd": 0.000595
+  },
+  "errors": [],
+  "_wall_ms": 2143
+}

@@ -1,0 +1,59 @@
+{
+  "ticket_id": "T45",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Send the AI draft to a reviewer (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Partnership, job or other request: route to a human"
+  ],
+  "triage": {
+    "intent": "other",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Inquiry about job opportunities in customer support.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer is inquiring about job opportunities in customer support. Per store policies, partnership and employment inquiries are handled by the partnerships team via support. Forward this inquiry to the partnerships team for follow‑up.",
+    "kb_gap": false,
+    "reply": "Hi Sam,\n\nThank you for reaching out and for your interest in joining Driftwood Supply Co. Our partnerships team handles all employment and partnership inquiries. I’ve forwarded your message to them, and they will be in touch if there are any suitable opportunities.\n\nBest regards,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "T45",
+    "from_name": "Sam Okafor",
+    "from_email": "sam.okafor@example.com",
+    "reply_to": "sam.okafor@example.com",
+    "subject": "Job inquiry"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 19365,
+    "tokens": {
+      "triage": {
+        "prompt": 915,
+        "completion": 70
+      },
+      "draft": {
+        "prompt": 2134,
+        "completion": 216
+      }
+    },
+    "est_cost_usd": 0.000539
+  },
+  "errors": [],
+  "_wall_ms": 19457
+}

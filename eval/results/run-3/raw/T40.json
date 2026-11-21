@@ -1,0 +1,61 @@
+{
+  "ticket_id": "T40",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Money-related request (billing, discount or price adjustment)"
+  ],
+  "triage": {
+    "intent": "billing_or_discount",
+    "order_number": "DS-1030",
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Customer requests price adjustment after purchase.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1030",
+    "order_number": "DS-1030"
+  },
+  "facts": {
+    "status": "delivered",
+    "days_since_delivery": 1,
+    "return_window_open": true,
+    "damage_window_open": true,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": false,
+    "return_shipping": "US return: we email a prepaid return label and deduct $6.95 from the refund"
+  },
+  "draft": {
+    "internal_note": "Customer purchased Ember Two-Burner Camp Stove (order DS-1030) on 2026-11-14, delivered 2026-11-17. They notice a price drop to $119 within 7 days of purchase and request the difference. Store policy allows a one-time price adjustment if the item drops in price within 7 days. Agent should approve a price adjustment of $20 and issue a refund to the original payment method, noting that the refund will appear on the statement in 5-10 business days.",
+    "kb_gap": false,
+    "reply": "Hi Chloe,\n\nThank you for reaching out. Since the Ember Two-Burner Camp Stove dropped in price to $119 within 7 days of your purchase, we can issue a one‑time price adjustment for the $20 difference. We’ll process a refund to your original payment method; please allow 5‑10 business days for the credit to appear on your statement.\n\nIf you have any other questions, just let us know.\n\nDriftwood Supply Support",
+    "ungrounded": [
+      "amount $119",
+      "amount $20"
+    ]
+  },
+  "metrics": {
+    "latency_ms": 7616,
+    "tokens": {
+      "triage": {
+        "prompt": 925,
+        "completion": 86
+      },
+      "draft": {
+        "prompt": 2684,
+        "completion": 285
+      }
+    },
+    "est_cost_usd": 0.000669
+  },
+  "errors": [],
+  "_wall_ms": 7703
+}

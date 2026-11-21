@@ -1,0 +1,60 @@
+{
+  "ticket_id": "H09",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Send the AI draft to a reviewer (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Product question answered from the catalog",
+    "The answer is not fully covered by the policy or catalog (knowledge gap), so a human reviews it"
+  ],
+  "triage": {
+    "intent": "product_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks if the Firefly lantern comes with a USB-C cable in the box.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer asks if Firefly lantern includes a USB-C cable. Catalog does not specify inclusion of cable, so we cannot confirm. Mark as knowledge gap and inform customer a teammate will follow up.",
+    "kb_gap": true,
+    "reply": "Hi Omar,\n\nThanks for reaching out! Our records don’t specify whether the Firefly lantern includes a USB‑C cable in the box. I’ll have a teammate look into this and get back to you shortly.\n\nBest regards,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "H09",
+    "from_name": "Omar Haddad",
+    "from_email": "omar.haddad@example.com",
+    "reply_to": "omar.haddad@example.com",
+    "subject": "Lantern cable"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 3953,
+    "tokens": {
+      "triage": {
+        "prompt": 910,
+        "completion": 110
+      },
+      "draft": {
+        "prompt": 2132,
+        "completion": 186
+      }
+    },
+    "est_cost_usd": 0.000533
+  },
+  "errors": [],
+  "_wall_ms": 4040
+}

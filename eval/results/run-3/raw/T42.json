@@ -1,0 +1,59 @@
+{
+  "ticket_id": "T42",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Send the AI draft to a reviewer (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Complaint: a human should own the response"
+  ],
+  "triage": {
+    "intent": "complaint",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "negative",
+    "risk_flags": [],
+    "summary": "Customer complains about lack of response and poor service, expressing regret over purchase.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "The customer is upset about not receiving a response and expresses regret about their purchase. No order information is available (order_match.status is no_order). We should apologize for the delay, assure them we are actively monitoring inquiries, and ask them to provide any order number or details so we can investigate further. No policy conflicts; proceed with a courteous apology and request for order details.",
+    "kb_gap": false,
+    "reply": "Hi Mark,\n\nI’m sorry you haven’t heard back from us – that’s not the experience we aim to provide. We’re here and want to resolve any issues you’ve had. Could you please share the order number or any details about your purchase so we can look into it right away?\n\nThank you for your patience, and we’ll get back to you promptly.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "T42",
+    "from_name": "Mark Ellis",
+    "from_email": "mark.ellis@example.com",
+    "reply_to": "mark.ellis@example.com",
+    "subject": "Does anyone work there??"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 2272,
+    "tokens": {
+      "triage": {
+        "prompt": 913,
+        "completion": 121
+      },
+      "draft": {
+        "prompt": 2136,
+        "completion": 275
+      }
+    },
+    "est_cost_usd": 0.00059
+  },
+  "errors": [],
+  "_wall_ms": 2364
+}

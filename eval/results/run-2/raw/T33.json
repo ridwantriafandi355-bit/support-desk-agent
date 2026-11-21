@@ -1,0 +1,47 @@
+{
+  "ticket_id": "T33",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Product question answered from the catalog"
+  ],
+  "triage": {
+    "intent": "product_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Customer asks if replacement burrs are available for the Basecamp grinder.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer asked about replacement burrs for Basecamp grinder. Catalog does not list replacement burrs, so inform that we do not sell them.",
+    "kb_gap": false,
+    "reply": "Hi Diego,\n\nThanks for reaching out. We don’t carry replacement burrs for the Basecamp Hand Grinder. If you need a new grinder, you can order another one from our site.\n\nLet us know if you have any other questions.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 1875,
+    "tokens": {
+      "triage": {
+        "prompt": 905,
+        "completion": 83
+      },
+      "draft": {
+        "prompt": 2083,
+        "completion": 211
+      }
+    },
+    "est_cost_usd": 0.000532
+  },
+  "errors": [],
+  "_wall_ms": 1942
+}

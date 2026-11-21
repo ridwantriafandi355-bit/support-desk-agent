@@ -1,0 +1,55 @@
+{
+  "ticket_id": "T12",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Eligible return (inside the window, no final-sale items); reply with return instructions"
+  ],
+  "triage": {
+    "intent": "return_request",
+    "order_number": "DS-1017",
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Harper wants to return an unused Basecamp grinder from order DS-1017.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1017",
+    "order_number": "DS-1017"
+  },
+  "facts": {
+    "status": "delivered",
+    "days_since_delivery": 7,
+    "return_window_open": true,
+    "damage_window_open": true,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false
+  },
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Hi Harper,\n\nThanks for reaching out. Since your Basecamp Hand Grinder is unused and within our 30‑day return window, you can return it by following these steps:\n1. Visit https://returns.driftwood-supply.example and enter order DS-1017 along with your email address.\n2. Choose the Basecamp Hand Grinder as the item you’d like to return.\n3. We’ll email you a prepaid US return label. Print the label and attach it to the package.\n4. Drop the package off at your local USPS location.\n\nOnce we receive and inspect the item, we’ll process a refund to your original payment method (shipping cost will be deducted from the refund as per our policy). If you have any questions, just let us know.\n\nBest regards,\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 18434,
+    "tokens": {
+      "triage": {
+        "prompt": 880,
+        "completion": 128
+      },
+      "draft": {
+        "prompt": 2450,
+        "completion": 237
+      }
+    },
+    "est_cost_usd": 0.000614
+  },
+  "errors": [],
+  "_wall_ms": 18511
+}

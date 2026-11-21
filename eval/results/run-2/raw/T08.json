@@ -1,0 +1,58 @@
+{
+  "ticket_id": "T08",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "In transit and on schedule; reply with tracking"
+  ],
+  "triage": {
+    "intent": "order_status",
+    "order_number": "DS-1003",
+    "language": "es",
+    "sentiment": "negative",
+    "risk_flags": [],
+    "summary": "Customer asks where their order DS-1003 is, hasn't arrived in Madrid.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1003",
+    "order_number": "DS-1003"
+  },
+  "facts": {
+    "status": "shipped",
+    "days_since_delivery": null,
+    "return_window_open": false,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": true,
+    "return_shipping": "International return: the customer ships the item back at their own cost to the address shown in the returns portal (no prepaid label)"
+  },
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Hola Sofía,\n\nTu pedido DS-1003 fue enviado el 5 de noviembre y está en tránsito. El último evento de seguimiento muestra que llegó al centro de Madrid el 15 de noviembre y está en proceso de aduana. Puedes seguir el envío aquí: https://driftwood-supply.example/track/DS-1003. La fecha estimada de entrega es el 24 de noviembre.\n\nGracias por tu paciencia.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 3088,
+    "tokens": {
+      "triage": {
+        "prompt": 924,
+        "completion": 135
+      },
+      "draft": {
+        "prompt": 2712,
+        "completion": 161
+      }
+    },
+    "est_cost_usd": 0.000613
+  },
+  "errors": [],
+  "_wall_ms": 3181
+}

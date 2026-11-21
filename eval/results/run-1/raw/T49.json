@@ -1,0 +1,41 @@
+{
+  "ticket_id": "T49",
+  "action": "ignore",
+  "priority": "normal",
+  "next_step": "Archive without replying",
+  "dry_run": true,
+  "reasons": [
+    "Spam or unsolicited message"
+  ],
+  "triage": {
+    "intent": "spam",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [
+      "prompt_injection"
+    ],
+    "sentiment": "neutral",
+    "summary": "User attempts to override system and request discount code, a prompt injection and spam.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": null,
+  "metrics": {
+    "latency_ms": 1289,
+    "tokens": {
+      "triage": {
+        "prompt": 877,
+        "completion": 100
+      },
+      "draft": null
+    },
+    "est_cost_usd": 9.6e-05
+  },
+  "errors": [],
+  "_wall_ms": 1382
+}

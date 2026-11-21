@@ -1,0 +1,59 @@
+{
+  "ticket_id": "T43",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Send the AI draft to a reviewer (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Partnership, job or other request: route to a human"
+  ],
+  "triage": {
+    "intent": "other",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Customer inquires about wholesale pricing for kettles and grinders.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer is asking about wholesale pricing for kettles and grinders. According to policies, wholesale and partnership inquiries are handled by the partnerships team via support. Draft a polite response directing Jordan to the partnerships team and note that a teammate will follow up.",
+    "kb_gap": false,
+    "reply": "Hi Jordan,\n\nThanks for reaching out! Wholesale pricing inquiries are handled by our partnerships team. I’ve forwarded your request to them, and they’ll be in touch shortly to discuss options for your coffee shop.\n\nBest regards,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "T43",
+    "from_name": "Jordan Blake",
+    "from_email": "jordan.blake@example.com",
+    "reply_to": "jordan.blake@example.com",
+    "subject": "Wholesale inquiry"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 4334,
+    "tokens": {
+      "triage": {
+        "prompt": 918,
+        "completion": 76
+      },
+      "draft": {
+        "prompt": 2141,
+        "completion": 216
+      }
+    },
+    "est_cost_usd": 0.000542
+  },
+  "errors": [],
+  "_wall_ms": 4431
+}

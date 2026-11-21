@@ -1,0 +1,58 @@
+{
+  "ticket_id": "T15",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Eligible return (inside the window, no final-sale items); reply with return instructions"
+  ],
+  "triage": {
+    "intent": "return_request",
+    "order_number": "DS-1028",
+    "language": "fr",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer wants to return an unused wool blanket from order DS-1028 in original packaging.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1028",
+    "order_number": "DS-1028"
+  },
+  "facts": {
+    "status": "delivered",
+    "days_since_delivery": 6,
+    "return_window_open": true,
+    "damage_window_open": true,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": true,
+    "return_shipping": "International return: the customer ships the item back at their own cost to the address shown in the returns portal (no prepaid label)"
+  },
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Bonjour Camille,\n\nMerci pour votre message. Vous pouvez initier le retour de la couverture en laine en vous rendant sur notre portail de retours : https://returns.driftwood-supply.example. Entrez le numéro de commande DS-1028 et votre adresse e‑mail, puis suivez les instructions. Comme il s’agit d’un retour international, vous devrez expédier l’article à vos frais à l’adresse indiquée dans le portail.\n\nNous traiterons votre retour dès réception de l’article.\n\nCordialement,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 6877,
+    "tokens": {
+      "triage": {
+        "prompt": 933,
+        "completion": 133
+      },
+      "draft": {
+        "prompt": 2709,
+        "completion": 174
+      }
+    },
+    "est_cost_usd": 0.000621
+  },
+  "errors": [],
+  "_wall_ms": 6942
+}

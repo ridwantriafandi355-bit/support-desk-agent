@@ -1,0 +1,51 @@
+{
+  "ticket_id": "T46",
+  "action": "ignore",
+  "priority": "normal",
+  "next_step": "Archive without replying",
+  "dry_run": true,
+  "reasons": [
+    "Spam or unsolicited message"
+  ],
+  "triage": {
+    "intent": "spam",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Marketing pitch offering SEO services.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": null,
+  "ticket": {
+    "id": "T46",
+    "from_name": "RankFast Growth Team",
+    "from_email": "growth@rankfast.example",
+    "reply_to": "growth@rankfast.example",
+    "subject": "Rank #1 on Google in 30 days"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 2087,
+    "tokens": {
+      "triage": {
+        "prompt": 922,
+        "completion": 54
+      },
+      "draft": null
+    },
+    "est_cost_usd": 0.000085
+  },
+  "errors": [],
+  "_wall_ms": 2189
+}

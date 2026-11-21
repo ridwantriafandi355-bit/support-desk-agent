@@ -1,0 +1,58 @@
+{
+  "ticket_id": "T11",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "In transit and on schedule; reply with tracking"
+  ],
+  "triage": {
+    "intent": "order_status",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer asks about delivery time of camp stove and fuel compatibility.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_email",
+    "requested": null,
+    "order_number": "DS-1002"
+  },
+  "facts": {
+    "status": "shipped",
+    "days_since_delivery": null,
+    "return_window_open": false,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": false,
+    "return_shipping": "US return: we email a prepaid return label and deduct $6.95 from the refund"
+  },
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Hi Liam,\n\nYour Ember Two-Burner Camp Stove (order DS-1002) shipped on November 14 and is currently in transit. You can track it here: https://driftwood-supply.example/track/DS-1002. The estimated delivery date is November 19.\n\nThe stove runs on propane only (standard 1 lb/16.4 oz cylinders) and is not compatible with butane canisters.\n\nLet us know if you need anything else.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 1856,
+    "tokens": {
+      "triage": {
+        "prompt": 924,
+        "completion": 123
+      },
+      "draft": {
+        "prompt": 2630,
+        "completion": 198
+      }
+    },
+    "est_cost_usd": 0.000619
+  },
+  "errors": [],
+  "_wall_ms": 1945
+}

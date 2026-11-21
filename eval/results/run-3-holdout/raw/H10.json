@@ -1,0 +1,60 @@
+{
+  "ticket_id": "H10",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Send the AI draft to a reviewer (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Product question answered from the catalog",
+    "The answer is not fully covered by the policy or catalog (knowledge gap), so a human reviews it"
+  ],
+  "triage": {
+    "intent": "product_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks if gift cards are sold.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer asks about gift cards, which are not listed in the product catalog. No policy covers gift cards. This is a knowledge gap; we should inform the customer we’ll look into it.",
+    "kb_gap": true,
+    "reply": "Hi Rachel,\n\nThank you for reaching out! We don’t have information about gift cards in our current product catalog. I’ll check on this for you and get back shortly.\n\nBest regards,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "H10",
+    "from_name": "Rachel Kim",
+    "from_email": "rachel.kim@example.com",
+    "reply_to": "rachel.kim@example.com",
+    "subject": "Gift cards?"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 7776,
+    "tokens": {
+      "triage": {
+        "prompt": 906,
+        "completion": 102
+      },
+      "draft": {
+        "prompt": 2119,
+        "completion": 162
+      }
+    },
+    "est_cost_usd": 0.000514
+  },
+  "errors": [],
+  "_wall_ms": 7852
+}

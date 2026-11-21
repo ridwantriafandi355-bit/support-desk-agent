@@ -1,0 +1,47 @@
+{
+  "ticket_id": "T50",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "No order found for this email, so the reply asks for the order number"
+  ],
+  "triage": {
+    "intent": "refund_status",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "negative",
+    "risk_flags": [],
+    "summary": "Customer hasn't received refund after returning item.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Hi Michael,\n\nI’m sorry to hear you haven’t received your refund yet. To look into this for you, could you please provide the order number you returned and the email address used for that order? Once we have that information, we’ll check the status and get back to you promptly.\n\nThank you for your patience.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 1459,
+    "tokens": {
+      "triage": {
+        "prompt": 905,
+        "completion": 105
+      },
+      "draft": {
+        "prompt": 2086,
+        "completion": 150
+      }
+    },
+    "est_cost_usd": 0.000502
+  },
+  "errors": [],
+  "_wall_ms": 1513
+}

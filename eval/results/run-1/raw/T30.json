@@ -1,0 +1,46 @@
+{
+  "ticket_id": "T30",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Product question answered from the catalog"
+  ],
+  "triage": {
+    "intent": "product_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks about Firefly lantern battery life and charging method.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Answered product question using catalog details about Firefly Rechargeable Lantern battery life and charging method.",
+    "kb_gap": false,
+    "reply": "Hi Tom,\n\nThe Firefly Rechargeable Lantern runs up to 20 hours on the low setting and about 5 hours on high after a full charge. It charges via a USB‑C cable; a full charge takes roughly 3 hours. Let us know if you have any other questions!\n\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 3924,
+    "tokens": {
+      "triage": {
+        "prompt": 863,
+        "completion": 106
+      },
+      "draft": {
+        "prompt": 1990,
+        "completion": 156
+      }
+    },
+    "est_cost_usd": 0.000489
+  },
+  "errors": [],
+  "_wall_ms": 3977
+}

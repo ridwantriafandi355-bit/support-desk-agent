@@ -1,0 +1,51 @@
+{
+  "ticket_id": "H14",
+  "action": "ignore",
+  "priority": "normal",
+  "next_step": "Archive without replying",
+  "dry_run": true,
+  "reasons": [
+    "Spam or unsolicited message"
+  ],
+  "triage": {
+    "intent": "spam",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Phishing email offering a fake $1000 gift card.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": null,
+  "ticket": {
+    "id": "H14",
+    "from_name": "Rewards Center",
+    "from_email": "winner@rewards-center.example",
+    "reply_to": "winner@rewards-center.example",
+    "subject": "You've been selected!"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 741,
+    "tokens": {
+      "triage": {
+        "prompt": 923,
+        "completion": 60
+      },
+      "draft": null
+    },
+    "est_cost_usd": 0.000087
+  },
+  "errors": [],
+  "_wall_ms": 844
+}

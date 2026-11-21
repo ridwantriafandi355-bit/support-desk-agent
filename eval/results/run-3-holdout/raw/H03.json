@@ -1,0 +1,70 @@
+{
+  "ticket_id": "H03",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Eligible return (inside the window, no final-sale items); reply with return instructions"
+  ],
+  "triage": {
+    "intent": "return_request",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer wants to return a sealed bag of Campfire Roast from a previous order.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "matched_by_email",
+    "requested": null,
+    "order_number": "DS-1009"
+  },
+  "facts": {
+    "status": "delivered",
+    "days_since_delivery": 6,
+    "return_window_open": true,
+    "damage_window_open": true,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": false,
+    "return_shipping": "US return: we email a prepaid return label and deduct $6.95 from the refund"
+  },
+  "draft": {
+    "internal_note": "Customer eligible for return of sealed coffee bag. Provide return portal link and note prepaid label with $6.95 deduction.",
+    "kb_gap": false,
+    "reply": "Hi Mia,\n\nThanks for reaching out. You can start your return by visiting https://returns.driftwood-supply.example and entering your order number DS-1009 and your email address. We'll email you a prepaid US return label, and $6.95 will be deducted from your refund for shipping. Once we receive the unopened coffee bag, we'll process the refund to your original payment method.\n\nIf you have any other questions, just let us know.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "H03",
+    "from_name": "Mia Harris",
+    "from_email": "mia.harris@example.com",
+    "reply_to": "mia.harris@example.com",
+    "subject": "Returning the coffee"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 18715,
+    "tokens": {
+      "triage": {
+        "prompt": 917,
+        "completion": 85
+      },
+      "draft": {
+        "prompt": 2749,
+        "completion": 194
+      }
+    },
+    "est_cost_usd": 0.000623
+  },
+  "errors": [],
+  "_wall_ms": 18805
+}

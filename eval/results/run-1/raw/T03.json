@@ -1,0 +1,55 @@
+{
+  "ticket_id": "T03",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "In transit 15 days past the estimate; possible lost parcel needs a reship/refund decision"
+  ],
+  "triage": {
+    "intent": "order_status",
+    "order_number": "DS-1006",
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer asks about delayed order DS-1006.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1006",
+    "order_number": "DS-1006"
+  },
+  "facts": {
+    "status": "shipped",
+    "days_since_delivery": null,
+    "return_window_open": false,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 15,
+    "overdue": true,
+    "refund_issued": false
+  },
+  "draft": {
+    "internal_note": "The parcel is 15 days past the estimated delivery date and tracking hasn't updated since 2026-11-02, triggering the late/missing parcel policy. We should open an investigation with USPS. If the carrier confirms the parcel is lost, we will reship the Driftwood Wool Camp Blanket at no charge. Draft reply informs the customer of the investigation and the next steps, without committing to a refund or replacement until the carrier response is received.",
+    "kb_gap": false,
+    "reply": "Hi James,\n\nThank you for reaching out. I see that your order DS-1006 was scheduled to arrive on November 3rd, and the tracking last updated on November 2nd. Since it’s now 15 days past the estimated delivery date, we’ll open an investigation with USPS to locate the package.\n\nWe’ll keep you posted on the status. If the carrier confirms the parcel is lost, we’ll promptly resend your Driftwood Wool Camp Blanket at no additional cost.\n\nWe appreciate your patience and will follow up as soon as we have more information.\n\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 2141,
+    "tokens": {
+      "triage": {
+        "prompt": 894,
+        "completion": 113
+      },
+      "draft": {
+        "prompt": 2450,
+        "completion": 322
+      }
+    },
+    "est_cost_usd": 0.000662
+  },
+  "errors": [],
+  "_wall_ms": 2243
+}

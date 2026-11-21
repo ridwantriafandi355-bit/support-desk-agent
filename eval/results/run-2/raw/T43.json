@@ -1,0 +1,47 @@
+{
+  "ticket_id": "T43",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Partnership, job or other request: route to a human"
+  ],
+  "triage": {
+    "intent": "other",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Customer inquiring about wholesale pricing for kettles and grinders.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer is asking about wholesale pricing for kettles and grinders. According to store policies, wholesale and partnership inquiries are handled by the partnerships team via support. Provide a polite response indicating we will forward their request to the appropriate team and that they will be contacted shortly.",
+    "kb_gap": false,
+    "reply": "Hi Jordan,\n\nThank you for reaching out about stocking our kettles and grinders. Wholesale and partnership inquiries are handled by our dedicated partnerships team. I’ll forward your request to them, and they’ll be in touch with you shortly to discuss pricing and details.\n\nBest regards,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 12250,
+    "tokens": {
+      "triage": {
+        "prompt": 918,
+        "completion": 74
+      },
+      "draft": {
+        "prompt": 2100,
+        "completion": 216
+      }
+    },
+    "est_cost_usd": 0.000536
+  },
+  "errors": [],
+  "_wall_ms": 12304
+}

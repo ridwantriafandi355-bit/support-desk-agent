@@ -1,0 +1,48 @@
+{
+  "ticket_id": "T32",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Product question answered from the catalog",
+    "The answer is not fully covered by the policy or catalog (knowledge gap), so a human reviews it"
+  ],
+  "triage": {
+    "intent": "product_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks if the wool camp blanket is machine washable and if it is itchy on bare skin.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer asks about care for Driftwood Wool Camp Blanket (SKU WB-1). Catalog does not specify washing instructions or skin feel. No policy covers this. Must indicate we’ll follow up.",
+    "kb_gap": true,
+    "reply": "Hi Hannah,\n\nThanks for reaching out! The care instructions for our Wool Camp Blanket aren’t listed in our product details, so I’ll need to check the proper cleaning method for you. I’ll get back to you shortly with the correct information.\n\nBest regards,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 12731,
+    "tokens": {
+      "triage": {
+        "prompt": 903,
+        "completion": 115
+      },
+      "draft": {
+        "prompt": 2086,
+        "completion": 208
+      }
+    },
+    "est_cost_usd": 0.00054
+  },
+  "errors": [],
+  "_wall_ms": 12824
+}

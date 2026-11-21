@@ -1,0 +1,58 @@
+{
+  "ticket_id": "T25",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Order not shipped yet; a human cancels or edits it in the store admin"
+  ],
+  "triage": {
+    "intent": "cancel_or_change_order",
+    "order_number": "DS-1005",
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "negative",
+    "summary": "Customer requests cancellation of order DS-1005.",
+    "confidence": 1
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1005",
+    "order_number": "DS-1005"
+  },
+  "facts": {
+    "status": "unfulfilled",
+    "days_since_delivery": null,
+    "return_window_open": false,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": false,
+    "return_shipping": "US return: we email a prepaid return label and deduct $6.95 from the refund"
+  },
+  "draft": {
+    "internal_note": "The customer Olivia Brown requests cancellation of order DS-1005. The order status is unfulfilled and has not shipped yet, so it can be cancelled per store policy. Approve cancellation and confirm to the customer.",
+    "kb_gap": false,
+    "reply": "Hi Olivia,\n\nWe’ve cancelled your order DS-1005 as requested. You’ll receive a confirmation email shortly, and no charge will be applied.\n\nIf you have any other questions, just let us know.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 2437,
+    "tokens": {
+      "triage": {
+        "prompt": 910,
+        "completion": 123
+      },
+      "draft": {
+        "prompt": 2556,
+        "completion": 165
+      }
+    },
+    "est_cost_usd": 0.000588
+  },
+  "errors": [],
+  "_wall_ms": 2511
+}

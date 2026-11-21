@@ -1,0 +1,48 @@
+{
+  "ticket_id": "T32",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Product question answered from the catalog",
+    "The answer is not fully covered by the policy or catalog (knowledge gap), so a human reviews it"
+  ],
+  "triage": {
+    "intent": "product_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks if the wool camp blanket is machine washable and if it is itchy on bare skin.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer asks about machine washability and skin irritation of the Wool Camp Blanket. Catalog only provides material composition, no care instructions or comfort details. This is a knowledge gap; a teammate should follow up with the appropriate information.",
+    "kb_gap": true,
+    "reply": "Hi Hannah,\n\nThanks for reaching out! Our Wool Camp Blanket is made of 80% recycled wool and 20% polyester. I don’t have the specific care instructions or details on how it feels against bare skin on hand. A teammate will get back to you with the exact information.\n\nBest regards,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 1883,
+    "tokens": {
+      "triage": {
+        "prompt": 903,
+        "completion": 115
+      },
+      "draft": {
+        "prompt": 2127,
+        "completion": 214
+      }
+    },
+    "est_cost_usd": 0.00055
+  },
+  "errors": [],
+  "_wall_ms": 1955
+}

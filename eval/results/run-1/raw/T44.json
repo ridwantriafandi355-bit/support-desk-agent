@@ -1,0 +1,46 @@
+{
+  "ticket_id": "T44",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Partnership, job or other request: route to a human"
+  ],
+  "triage": {
+    "intent": "other",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Influencer outreach for collaboration and product review.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer is requesting a collaboration/influencer partnership. Per policy, partnership inquiries are handled by the partnerships team via support. Draft a polite response directing Maya to the appropriate channel and note that no order details are involved.",
+    "kb_gap": false,
+    "reply": "Hi Maya,\n\nThank you for reaching out and for your interest in collaborating with Driftwood Supply Co.! Partnership and influencer requests are handled by our dedicated partnerships team. Please forward your proposal to partnerships@driftwood-supply.example, and they’ll be happy to discuss possibilities with you.\n\nWe appreciate your support and look forward to hearing from you.\n\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 1572,
+    "tokens": {
+      "triage": {
+        "prompt": 876,
+        "completion": 71
+      },
+      "draft": {
+        "prompt": 2006,
+        "completion": 242
+      }
+    },
+    "est_cost_usd": 0.000533
+  },
+  "errors": [],
+  "_wall_ms": 1612
+}

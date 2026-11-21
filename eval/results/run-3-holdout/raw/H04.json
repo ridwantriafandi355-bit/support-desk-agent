@@ -1,0 +1,70 @@
+{
+  "ticket_id": "H04",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Send the AI draft to a reviewer (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Order contains final-sale items"
+  ],
+  "triage": {
+    "intent": "return_request",
+    "order_number": null,
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer wants to return the Trailhead insulated mug from a recent order.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "matched_by_email",
+    "requested": null,
+    "order_number": "DS-1007"
+  },
+  "facts": {
+    "status": "delivered",
+    "days_since_delivery": 3,
+    "return_window_open": true,
+    "damage_window_open": true,
+    "has_final_sale_items": true,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": false,
+    "return_shipping": "US return: we email a prepaid return label and deduct $6.95 from the refund"
+  },
+  "draft": {
+    "internal_note": "Customer wants to return the Trailhead Insulated Mug (non-final sale) from order DS-1007. Return window is open. Per policy, we will email a prepaid US return label and deduct $6.95 from the refund. No issues with final-sale item as it is not being returned.",
+    "kb_gap": false,
+    "reply": "Hi Ava,\n\nSure, you can return the Trailhead Insulated Mug from order DS-1007. We'll email you a prepaid US return label shortly. Please note that $6.95 will be deducted from your refund to cover return shipping. Once we receive the item in its original condition, we'll process the refund to your original payment method.\n\nTo start the return, you can also visit https://returns.driftwood-supply.example and enter your order number and email.\n\nLet us know if you need any further assistance.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "H04",
+    "from_name": "Ava Thompson",
+    "from_email": "ava.thompson@example.com",
+    "reply_to": "ava.thompson@example.com",
+    "subject": "Return the insulated mug"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 8969,
+    "tokens": {
+      "triage": {
+        "prompt": 915,
+        "completion": 84
+      },
+      "draft": {
+        "prompt": 2744,
+        "completion": 267
+      }
+    },
+    "est_cost_usd": 0.000666
+  },
+  "errors": [],
+  "_wall_ms": 9167
+}

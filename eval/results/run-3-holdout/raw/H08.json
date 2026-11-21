@@ -1,0 +1,59 @@
+{
+  "ticket_id": "H08",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Product question answered from the catalog"
+  ],
+  "triage": {
+    "intent": "product_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks if Trailhead mug is dishwasher safe and how long it keeps coffee hot.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer asked about dishwasher safety and heat retention of Trailhead Insulated Mug. Catalog states mug body is dishwasher safe and keeps drinks hot up to 6 hours.",
+    "kb_gap": false,
+    "reply": "Hi Lena,\n\nYes, the Trailhead Insulated Mug (12 oz) is dishwasher safe for the mug body, and the lid should be washed on the top rack. It keeps drinks hot for up to 6 hours.\n\nThanks for reaching out!\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "H08",
+    "from_name": "Lena Park",
+    "from_email": "lena.park@example.com",
+    "reply_to": "lena.park@example.com",
+    "subject": "Mug question"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 1956,
+    "tokens": {
+      "triage": {
+        "prompt": 906,
+        "completion": 116
+      },
+      "draft": {
+        "prompt": 2128,
+        "completion": 200
+      }
+    },
+    "est_cost_usd": 0.000542
+  },
+  "errors": [],
+  "_wall_ms": 2033
+}

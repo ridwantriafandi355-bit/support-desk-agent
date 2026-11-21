@@ -1,0 +1,55 @@
+{
+  "ticket_id": "T18",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Refund already issued; reply with the date and bank timing"
+  ],
+  "triage": {
+    "intent": "refund_status",
+    "order_number": "DS-1008",
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer asks if refund processed for returned blanket.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1008",
+    "order_number": "DS-1008"
+  },
+  "facts": {
+    "status": "returned",
+    "days_since_delivery": 25,
+    "return_window_open": false,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": true
+  },
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Hi Lucas,\n\nWe processed your refund for the Driftwood Wool Camp Blanket on November 12, 2026. The amount of $89 has been returned to your original payment method. Your bank should show the credit within 5‑10 business days.\n\nIf you have any other questions, feel free to let us know.\n\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 2020,
+    "tokens": {
+      "triage": {
+        "prompt": 877,
+        "completion": 112
+      },
+      "draft": {
+        "prompt": 2478,
+        "completion": 194
+      }
+    },
+    "est_cost_usd": 0.000587
+  },
+  "errors": [],
+  "_wall_ms": 2118
+}

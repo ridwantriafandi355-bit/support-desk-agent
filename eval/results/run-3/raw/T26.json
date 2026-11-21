@@ -1,0 +1,58 @@
+{
+  "ticket_id": "T26",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Too late to cancel or edit (order is shipped); reply explains the options"
+  ],
+  "triage": {
+    "intent": "cancel_or_change_order",
+    "order_number": "DS-1010",
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer wants to change shipping address for order DS-1010.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1010",
+    "order_number": "DS-1010"
+  },
+  "facts": {
+    "status": "shipped",
+    "days_since_delivery": null,
+    "return_window_open": false,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": true,
+    "return_shipping": "International return: the customer ships the item back at their own cost to the address shown in the returns portal (no prepaid label)"
+  },
+  "draft": {
+    "internal_note": "",
+    "kb_gap": false,
+    "reply": "Hi Ethan,\n\nThanks for reaching out. Your order DS-1010 has already shipped, so we’re unable to change the shipping address on our end. You can contact UPS directly using the tracking number 1Z999AA10000001010 (tracking link: https://driftwood-supply.example/track/DS-1010) to request a redirect or hold for pickup.\n\nIf you need any further assistance, please let us know.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 7265,
+    "tokens": {
+      "triage": {
+        "prompt": 931,
+        "completion": 83
+      },
+      "draft": {
+        "prompt": 2753,
+        "completion": 164
+      }
+    },
+    "est_cost_usd": 0.000606
+  },
+  "errors": [],
+  "_wall_ms": 7352
+}

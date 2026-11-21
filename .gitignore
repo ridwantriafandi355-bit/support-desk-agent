@@ -1,0 +1,13 @@
+node_modules/
+.env
+*.log
+__pycache__/
+eval/results/raw-triage-only/
+# personal settings (email addresses, Telegram chat id, credential ids)
+config.local.json
+workflows/local/
+
+# not part of the portfolio repo
+video/
+linkedin-post.md
+loom-script.md

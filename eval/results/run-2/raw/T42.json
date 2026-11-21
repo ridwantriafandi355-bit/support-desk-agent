@@ -1,0 +1,47 @@
+{
+  "ticket_id": "T42",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Complaint: a human should own the response"
+  ],
+  "triage": {
+    "intent": "complaint",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "negative",
+    "summary": "Customer complains about lack of response and poor service, expressing regret over purchase.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "The customer, Mark Ellis, has not provided an order number and our system found no matching order. They are expressing frustration about lack of response. Since there is no order to reference, we should apologize for the delay, assure them we are looking into their inquiry, and ask them to provide any order details if they have them. No policy gaps; we can respond directly.",
+    "kb_gap": false,
+    "reply": "Hi Mark,\n\nI’m sorry you haven’t heard back from us and for the frustration this has caused. We’re looking into your inquiry and want to make sure we address any concerns you have.\n\nIf you have an order number or any details about a recent purchase, please let us know so we can investigate further.\n\nThank you for your patience.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 3332,
+    "tokens": {
+      "triage": {
+        "prompt": 913,
+        "completion": 121
+      },
+      "draft": {
+        "prompt": 2095,
+        "completion": 248
+      }
+    },
+    "est_cost_usd": 0.000568
+  },
+  "errors": [],
+  "_wall_ms": 3399
+}

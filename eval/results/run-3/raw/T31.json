@@ -1,0 +1,47 @@
+{
+  "ticket_id": "T31",
+  "action": "auto_reply",
+  "priority": "normal",
+  "next_step": "Send the AI reply to the customer",
+  "dry_run": true,
+  "reasons": [
+    "Product question answered from the catalog"
+  ],
+  "triage": {
+    "intent": "product_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks if Ember two-burner stove runs on butane canisters or only propane.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer asked about fuel type for Ember Two-Burner Camp Stove. Catalog states it runs on propane only and is not for butane canisters. Provide this info.",
+    "kb_gap": false,
+    "reply": "Hi Marcus,\n\nThe Ember Two-Burner Camp Stove runs on propane only (standard 1 lb / 16.4 oz cylinders). It is not compatible with butane canisters.\n\nLet us know if you have any other questions!\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 1897,
+    "tokens": {
+      "triage": {
+        "prompt": 911,
+        "completion": 113
+      },
+      "draft": {
+        "prompt": 2135,
+        "completion": 184
+      }
+    },
+    "est_cost_usd": 0.000533
+  },
+  "errors": [],
+  "_wall_ms": 1996
+}

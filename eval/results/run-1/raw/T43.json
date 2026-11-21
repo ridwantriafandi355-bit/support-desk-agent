@@ -1,0 +1,46 @@
+{
+  "ticket_id": "T43",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Partnership, job or other request: route to a human"
+  ],
+  "triage": {
+    "intent": "other",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Customer inquires about wholesale pricing for kettles and grinders.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer is requesting wholesale pricing for kettles and grinders. Per policy, wholesale and partnership inquiries are handled by the partnerships team via support. Draft a polite response informing Jordan that we’ll forward the inquiry to the appropriate team and they will be contacted shortly.",
+    "kb_gap": false,
+    "reply": "Hi Jordan,\n\nThank you for reaching out and for your interest in stocking our kettles and grinders. Wholesale and partnership inquiries are handled by our dedicated partnerships team. I’ve forwarded your request to them, and they will be in touch with you shortly to discuss pricing and details.\n\nWe appreciate your interest in Drift‑Wood Supply Co.!\n\nDriftwood Supply Support"
+  },
+  "metrics": {
+    "latency_ms": 2264,
+    "tokens": {
+      "triage": {
+        "prompt": 875,
+        "completion": 79
+      },
+      "draft": {
+        "prompt": 2008,
+        "completion": 234
+      }
+    },
+    "est_cost_usd": 0.000531
+  },
+  "errors": [],
+  "_wall_ms": 2341
+}

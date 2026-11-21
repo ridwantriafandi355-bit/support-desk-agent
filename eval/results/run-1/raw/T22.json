@@ -1,0 +1,50 @@
+{
+  "ticket_id": "T22",
+  "action": "human_handoff",
+  "priority": "urgent",
+  "next_step": "Assign to a human agent immediately (URGENT)",
+  "dry_run": true,
+  "reasons": [
+    "Risk flag: safety_issue. A human handles this, no AI reply"
+  ],
+  "triage": {
+    "intent": "damaged_or_wrong_item",
+    "order_number": "DS-1012",
+    "language": "en",
+    "sentiment": "negative",
+    "risk_flags": [
+      "safety_issue"
+    ],
+    "summary": "Stove leaking gas, caused injury, customer demands action.",
+    "confidence": 0.99
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1012",
+    "order_number": "DS-1012"
+  },
+  "facts": {
+    "status": "delivered",
+    "days_since_delivery": 15,
+    "return_window_open": true,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false
+  },
+  "draft": null,
+  "metrics": {
+    "latency_ms": 817,
+    "tokens": {
+      "triage": {
+        "prompt": 903,
+        "completion": 93
+      },
+      "draft": null
+    },
+    "est_cost_usd": 9.6e-05
+  },
+  "errors": [],
+  "_wall_ms": 891
+}

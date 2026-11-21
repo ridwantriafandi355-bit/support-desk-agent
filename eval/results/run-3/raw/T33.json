@@ -1,0 +1,60 @@
+{
+  "ticket_id": "T33",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Send the AI draft to a reviewer (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Product question answered from the catalog",
+    "The answer is not fully covered by the policy or catalog (knowledge gap), so a human reviews it"
+  ],
+  "triage": {
+    "intent": "product_question",
+    "order_number": null,
+    "language": "en",
+    "risk_flags": [],
+    "sentiment": "neutral",
+    "summary": "Asks if replacement burrs are available for Basecamp grinder.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "no_order",
+    "requested": null,
+    "order_number": null
+  },
+  "facts": null,
+  "draft": {
+    "internal_note": "Customer asks about replacement burrs for Basecamp Hand Grinder. Catalog does not mention selling replacement burrs, so we cannot confirm availability. This is a knowledge gap; a teammate should follow up.",
+    "kb_gap": true,
+    "reply": "Hi Diego,\n\nThanks for reaching out! Our catalog doesn’t list replacement burrs for the Basecamp Hand Grinder, so I’m not able to confirm if they’re available.\n\nA teammate will look into this and get back to you shortly.\n\nBest regards,\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "ticket": {
+    "id": "T33",
+    "from_name": "Diego Santos",
+    "from_email": "diego.santos@example.com",
+    "reply_to": "diego.santos@example.com",
+    "subject": "Replacement burrs?"
+  },
+  "store": {
+    "email": "support@driftwood-supply.example",
+    "name": "Driftwood Supply Support",
+    "telegram_chat_id": "SET_ME"
+  },
+  "metrics": {
+    "latency_ms": 2262,
+    "tokens": {
+      "triage": {
+        "prompt": 905,
+        "completion": 108
+      },
+      "draft": {
+        "prompt": 2123,
+        "completion": 179
+      }
+    },
+    "est_cost_usd": 0.000526
+  },
+  "errors": [],
+  "_wall_ms": 3846
+}

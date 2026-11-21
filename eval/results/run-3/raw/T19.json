@@ -1,0 +1,58 @@
+{
+  "ticket_id": "T19",
+  "action": "needs_approval",
+  "priority": "normal",
+  "next_step": "Post the AI draft to the approval queue (approve / edit / reject)",
+  "dry_run": true,
+  "reasons": [
+    "Refund asked but no refund issued yet (status \"return_in_transit\")"
+  ],
+  "triage": {
+    "intent": "refund_status",
+    "order_number": "DS-1018",
+    "language": "en",
+    "sentiment": "neutral",
+    "risk_flags": [],
+    "summary": "Customer asks when refund will be processed after returning items.",
+    "confidence": 0.95
+  },
+  "order_match": {
+    "status": "matched_by_number",
+    "requested": "DS-1018",
+    "order_number": "DS-1018"
+  },
+  "facts": {
+    "status": "return_in_transit",
+    "days_since_delivery": 19,
+    "return_window_open": false,
+    "damage_window_open": false,
+    "has_final_sale_items": false,
+    "days_past_estimate": 0,
+    "overdue": false,
+    "refund_issued": false,
+    "is_international": false,
+    "return_shipping": "US return: we email a prepaid return label and deduct $6.95 from the refund"
+  },
+  "draft": {
+    "internal_note": "Customer inquires about refund timing. Order DS-1018 is currently in return transit; we have not yet received the returned item. According to policy, refunds are issued within 3 business days after we receive and inspect the return. Inform the customer of this process and that we will notify once the return is received.",
+    "kb_gap": false,
+    "reply": "Hi Elijah,\n\nThanks for reaching out. We see that your return for order DS-1018 is still in transit to our warehouse. Once we receive and inspect the Summit Enamel Mug Set, we’ll process your refund within 3 business days. We’ll send you a confirmation as soon as the refund is issued.\n\nIf you have any other questions, just let us know.\n\nDriftwood Supply Support",
+    "ungrounded": []
+  },
+  "metrics": {
+    "latency_ms": 7288,
+    "tokens": {
+      "triage": {
+        "prompt": 915,
+        "completion": 128
+      },
+      "draft": {
+        "prompt": 2735,
+        "completion": 245
+      }
+    },
+    "est_cost_usd": 0.000664
+  },
+  "errors": [],
+  "_wall_ms": 7370
+}
